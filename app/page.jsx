@@ -1,3 +1,6 @@
+'use client';
+
+import LikeButton from './like-button';
 import { useState } from 'react';
  
 function Header({ title }) {
@@ -21,7 +24,7 @@ export default function HomePage() {
           <li key={name}>{name}</li>
         ))}
       </ul>
- 
+ <LikeButton />
       <button onClick={handleClick}>Like ({likes})</button>
     </div>
   );
